@@ -1,0 +1,20 @@
+Tratamento de valores ausentes:
+Durante a análise, foram identificados valores ausentes em diferentes colunas do conjunto de dados. Para lidar com esses valores ausentes, adotei a estratégia de imputação com base na média dos valores existentes nas respectivas colunas. Essa abordagem foi escolhida para preservar a integridade dos dados, evitando a remoção de registros valiosos.
+
+Detecção e tratamento de outliers:
+Após uma análise exploratória inicial, identifiquei a presença de outliers, pontos de dados que se encontravam significativamente distantes da maioria dos outros registros. Realizei uma avaliação criteriosa para determinar a validade desses outliers. Decidiu-se por remover os outliers, uma vez que sua influência na análise poderia distorcer os resultados finais. Após a remoção, verificou-se uma melhoria na qualidade e na representatividade dos dados.
+
+Padronização e correção de formatos:
+Verifiquei e corrigi inconsistências nos formatos dos dados, como formatos de datas, moedas, números e unidades de medida. Essa etapa foi crucial para garantir a uniformidade dos dados e permitir uma comparação precisa entre diferentes registros. O formato correto foi aplicado a todas as colunas relevantes do conjunto de dados, assegurando a consistência ao longo da análise.
+
+Tratamento de dados duplicados:
+Utilizando identificadores únicos, identifiquei registros duplicados no conjunto de dados. Com base nas necessidades da análise, optei por remover os registros duplicados para evitar distorções nos resultados. Essa ação contribuiu para a obtenção de uma visão mais precisa e confiável dos dados.
+
+Normalização de dados:
+Para garantir uma comparação justa entre diferentes variáveis, normalizei os dados em uma escala específica. A técnica utilizada foi a normalização min-max, que mapeou os valores para uma faixa padronizada. Essa normalização permitiu uma análise mais precisa das relações e tendências presentes nos dados.
+
+Validação de integridade de dados:
+Como parte da limpeza de dados, realizei uma validação rigorosa para garantir a consistência e a integridade dos dados. Verifiquei se os registros estavam em conformidade com as regras de negócios e os requisitos específicos da análise. Quaisquer dados inconsistentes foram corrigidos ou removidos, a fim de garantir a qualidade geral dos dados.
+
+Verificação de consistência e validade:
+Durante a limpeza, realizei verificações para garantir que os dados estivessem dentro dos parâmetros esperados e representassem informações válidas. Analisei se os dados atendiam às regras de domínio estabelec
