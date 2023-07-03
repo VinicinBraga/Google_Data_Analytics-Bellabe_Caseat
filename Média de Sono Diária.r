@@ -20,3 +20,5 @@ grafico <- ggplot(data = media_sono_por_dia, aes(x = factor(SleepDayOfWeek, leve
 
 # Exibir o gráfico
 print(grafico)
+
+
