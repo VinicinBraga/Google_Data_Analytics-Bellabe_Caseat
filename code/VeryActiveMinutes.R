@@ -1,14 +1,14 @@
 library(ggplot2)
 library(dplyr)
 
-# Carregar os dados da planilha
-dados <- read.csv("BellaBeat - CleanData.csv")
+# Carregar os data da planilha
+data <- read.csv("BellaBeat - CleanData.csv")
 
 # Converter as colunas para tipo numérico
-dados$VeryActiveMinutesByNumber <- as.numeric(dados$VeryActiveMinutesByNumber)
+data$VeryActiveMinutesByNumber <- as.numeric(data$VeryActiveMinutesByNumber)
 
-# Agrupar os dados por dia da semana e calcular as médias
-media_very_active <- dados %>%
+# Agrupar os data por dia da semana e calcular as médias
+media_very_active <- data %>%
   group_by(Day) %>%
   summarize(media_very_active = mean(VeryActiveMinutesByNumber, na.rm = TRUE))
 

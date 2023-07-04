@@ -1,17 +1,17 @@
 library(ggplot2)
 library(dplyr)
 
-# Carregar os dados da planilha
-dados <- read.csv("BellaBeat - CleanData.csv")
+# Carregar os data da planilha
+data <- read.csv("BellaBeat - CleanData.csv")
 
 # Substituir vírgulas por pontos na coluna 
-dados$SedentaryActiveDistance <- gsub(",", ".", dados$SedentaryActiveDistance)
+data$SedentaryActiveDistance <- gsub(",", ".", data$SedentaryActiveDistance)
 
 # Converter a coluna em tipo numérico
-dados$SedentaryActiveDistance <- as.numeric(dados$SedentaryActiveDistance)
+data$SedentaryActiveDistance <- as.numeric(data$SedentaryActiveDistance)
 
-# Agrupar os dados por dia da semana e calcular a média da distância em atividades 
-media_distancia_atividade_sedentaria <- dados %>%
+# Agrupar os data por dia da semana e calcular a média da distância em atividades 
+media_distancia_atividade_sedentaria <- data %>%
   group_by(Day) %>%
   summarize(media_distancia_sedentaria = mean(SedentaryActiveDistance, na.rm = TRUE))
 

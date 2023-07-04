@@ -1,11 +1,11 @@
 library(ggplot2)
 library(dplyr)
 
-# Carregar os dados da planilha
-dados <- read.csv("BellaBeat - CleanData.csv")
+# Carregar os data da planilha
+data <- read.csv("BellaBeat - CleanData.csv")
 
-# Agrupar os dados por dia da semana e calcular a média dos passos
-media_passos_por_dia <- dados %>%
+# Agrupar os data por dia da semana e calcular a média dos passos
+media_passos_por_dia <- data %>%
   group_by(Day) %>%
   summarize(media_passos = mean(TotalSteps))
 

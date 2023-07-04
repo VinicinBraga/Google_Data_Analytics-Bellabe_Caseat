@@ -1,11 +1,11 @@
 library(ggplot2)
 library(dplyr)
 
-# Carregar os dados da planilha
-dados <- read.csv("sleepDay_merged.csv")
+# Carregar os data da planilha
+data <- read.csv("sleepDay_merged.csv")
 
-# Agrupar os dados por dia da semana e calcular a média dos passos
-media_sono_por_dia <- dados %>%
+# Agrupar os data por dia da semana e calcular a média dos passos
+media_sono_por_dia <- data %>%
   group_by(SleepDayOfWeek) %>%
   summarize(media_sono_diária = mean(TotalMinutesAsleep))
 
