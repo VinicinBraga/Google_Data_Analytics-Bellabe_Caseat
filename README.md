@@ -1,5 +1,6 @@
-# Google_Data_Analytics-Bellabeat_Case
-(Google Data Analytics)Case Study : How Can a Wellness Tech Company Act Smart?
+# Google_Data_Analytics
+
+Estudo de caso: como uma empresa de tecnologia de bem-estar pode agir de forma inteligente?
 
 
 <div align="center">
